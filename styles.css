@@ -1,0 +1,148 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.819),rgba(0, 0, 0, 0.917)),url(./images/04.webp) ;
+    font-family: "VT323", monospace;
+     font-weight: 400;
+     font-style: normal;
+    font-size: 40px;
+    color: rgb(255, 204, 0);
+    text-shadow: 3px 3px 1px black;
+    animation: movebackground 30s linear infinite alternate-reverse;
+}
+@keyframes movebackground {
+    0%{
+        background-position: -200;
+    }
+    100%{
+        background-position: 100;
+    }
+}
+
+
+#main{
+    border: 10px solid rgb(255, 0, 0);
+    background: linear-gradient(rgba(0, 84, 95, 0.905),rgba(51, 21, 0, 0.811)),url(./images/03.jpg);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 10px 16px 1px black;
+    margin-top: 3rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    line-height: 10px;
+}
+button{
+    cursor: pointer;
+}
+#main h1{
+    
+    margin-top: 20px;
+    font-family: "Honk", system-ui;
+     font-optical-sizing: auto;
+     font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#main h1:hover{
+    transform: scale(1.2);
+}
+#input{
+    background-color: rgb(255, 215, 122);
+    font-size: 40px;
+    border: none;
+    box-shadow: 1px 1px 2px;
+    width: 80px;
+    height: 70px;
+    text-align: center;
+}
+#flex{
+    margin-top: -70px;
+    margin-bottom: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(233, 47, 47);
+}
+#enter,#reset{
+    background-color: aqua;
+    padding: 5px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.5s;
+}
+#enter:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 5, 5);
+    transform: scale(1.2);
+}
+#reset:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(230, 5, 5);
+    transform: scale(1.2);
+}
+#heart{
+    color: rgb(204, 74, 74);
+    cursor: pointer;
+    margin-right: 12px;
+}
+#lives{
+    font-size: 50px;
+}
+#victory{
+    color: brown;
+    animation: victory 0.6s ease-in-out infinite alternate;
+}
+@keyframes victory{
+    0%{
+        transform: scale(1);
+        color: rgb(4, 255, 0);
+    }
+    100%{
+        transform: scale(1.2);
+        color: rgb(255, 0, 195);
+    }
+}
+@media only screen and (max-width:600px){
+    #main{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    #main h1{
+        font-size: 30px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    #flex{
+        font-size: 43px;
+        margin-bottom: -50px;
+    }
+    #main h1:hover{
+    transform: scale(1.1);
+    }
+}
+@media only screen and (max-width:900px){
+    #main{
+        margin-top: 3rem;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #main h1{
+        font-size: 40px;
+    }
+    #buttons{
+        display: flex;
+        justify-content: center;
+    }
+    #flex{
+        margin-top: -80px;
+    }
+}
